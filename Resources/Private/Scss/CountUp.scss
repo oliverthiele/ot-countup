@@ -1,3 +1,18 @@
+.ot-countup {
+  // .ot-countup-items uses the g-4 gutter utility, which sets a negative
+  // margin-top on .row (Bootstrap's row-gap mechanism, normally cancelled out
+  // by matching padding-top on the .col children). With nothing above it to
+  // absorb that negative margin, the row would otherwise ride up into
+  // whatever precedes this element (e.g. the content element's heading).
+  //
+  // Deliberately hardcoded to match the g-4 utility on .ot-countup-items,
+  // not read from --bs-gutter-y: that variable inherits down from whichever
+  // ancestor .row/.container last set it (usually the page layout grid,
+  // unrelated to this component's own gutter), so relying on it here would
+  // pick up the wrong value instead of falling back as intended.
+  padding-top: 1.5rem;
+}
+
 .ot-countup-item {
   text-align: center;
 }
