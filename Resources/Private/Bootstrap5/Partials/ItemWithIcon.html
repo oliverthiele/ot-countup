@@ -1,0 +1,8 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:i="http://typo3.org/ns/OliverThiele/OtIcons/ViewHelpers"
+      lang="en" data-namespace-typo3-fluid="true">
+<div class="ot-countup-item">
+    <i:icon identifier="{item.icon_identifier}" size="2x" additionalClasses="ot-countup-icon" aria-hidden="true"/>
+    <f:render partial="ItemBody" section="Content" arguments="{item: item, duration: duration}"/>
+</div>
+</html>

@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  OliverThiele\OtCountup\:
+    resource: '../Classes/*'
+
+  OliverThiele\OtCountup\ViewHelpers\IsExtensionLoadedViewHelper:
+    public: true
+
+  OliverThiele\OtCountup\ViewHelpers\RowColsViewHelper:
+    public: true

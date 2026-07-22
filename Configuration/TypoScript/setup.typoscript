@@ -1,0 +1,16 @@
+tt_content {
+  ot_countup =< lib.contentElement
+  ot_countup {
+    templateName = CountUp
+    templateRootPaths {
+      10 = EXT:ot_countup/Resources/Private/Bootstrap5/Templates/
+    }
+#    Not defined; the standard TYPO3 layout is used
+#    layoutRootPaths {
+#      10 = EXT:ot_countup/Resources/Private/Bootstrap5/Layouts/
+#    }
+    partialRootPaths {
+      10 = EXT:ot_countup/Resources/Private/Bootstrap5/Partials/
+    }
+  }
+}

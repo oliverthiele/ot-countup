@@ -1,0 +1,33 @@
+# ============================================================
+# PHPStan configuration for ot-countup (TYPO3 Extension)
+# ============================================================
+
+includes:
+  - ../../vendor/saschaegerer/phpstan-typo3/extension.neon
+
+parameters:
+  level: 8
+  paths:
+    - Classes/
+    - Configuration/
+  tmpDir: ../../var/cache/phpstan/ot-countup
+  reportUnmatchedIgnoredErrors: false
+  checkUninitializedProperties: true
+
+  ignoreErrors:
+    # $GLOBALS['TCA'] is mixed — expected in TCA configuration files
+    - '#Access to an undefined index: TCA on \$GLOBALS#'
+    - '#Cannot use array (push|offset) on (a value|an? element) of type mixed#'
+    - '#Offset .* does not exist on mixed#'
+
+    # TYPO3 globals
+    - '#\$GLOBALS\[''TYPO3_REQUEST''\]#'
+    - '#Constant TYPO3_MODE not found#'
+
+    # Dynamic array keys in TCA configuration
+    - '#has no value type specified in iterable type array#'
+
+  scanDirectories:
+    - ../../vendor
+  scanFiles:
+    - ../../vendor/autoload.php

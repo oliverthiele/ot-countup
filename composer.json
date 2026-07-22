@@ -1,0 +1,51 @@
+{
+	"name": "oliverthiele/ot-countup",
+	"type": "typo3-cms-extension",
+	"description": "CE CountUp - TYPO3 content element for animated, viewport-triggered counting statistics (key figures).",
+	"homepage": "https://www.oliver-thiele.de/",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"authors": [
+		{
+			"name": "Oliver Thiele",
+			"email": "mail@oliver-thiele.de",
+			"role": "Developer",
+			"homepage": "https://www.oliver-thiele.de/"
+		}
+	],
+	"keywords": [
+		"typo3",
+		"countup",
+		"counter",
+		"statistics",
+		"content element"
+	],
+	"require": {
+		"php": ">=8.4",
+		"typo3/cms-core": "^14.3"
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^2.1",
+		"saschaegerer/phpstan-typo3": "^3.0",
+		"roave/security-advisories": "dev-latest"
+	},
+	"suggest": {
+		"oliverthiele/ot-icons": "Icon rendering via Fluid ViewHelper for the icon_identifier field",
+		"oliverthiele/ot-iconselector": "Visual icon selector with AJAX search and SVG preview for the icon_identifier field"
+	},
+	"autoload": {
+		"psr-4": {
+			"OliverThiele\\OtCountup\\": "Classes"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "ot_countup"
+		}
+	},
+	"support": {
+		"issues": "https://github.com/oliverthiele/ot-countup/issues",
+		"source": "https://github.com/oliverthiele/ot-countup"
+	}
+}

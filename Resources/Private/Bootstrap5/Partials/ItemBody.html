@@ -1,0 +1,24 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      lang="en" data-namespace-typo3-fluid="true">
+<f:section name="Content">
+    <p class="ot-countup-value-wrap">
+        <span class="ot-countup-value" aria-hidden="true">
+            <f:if condition="{item.value_prefix}">
+                <span class="ot-countup-value-affix">{item.value_prefix}</span>
+            </f:if>
+            <span
+                class="ot-countup-value-number"
+                data-js="otCountupItem"
+                data-start="{item.value_start}"
+                data-end="{item.value_end}"
+                data-duration="{duration}"
+            >{item.value_end}</span>
+            <f:if condition="{item.value_suffix}">
+                <span class="ot-countup-value-affix">{item.value_suffix}</span>
+            </f:if>
+        </span>
+        <span class="visually-hidden">{item.value_prefix} {item.value_end} {item.value_suffix} {item.title}</span>
+    </p>
+    <p class="ot-countup-label">{item.title}</p>
+</f:section>
+</html>
