@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- `.ot-countup` overlapped the preceding element (e.g. a heading) because the `.ot-countup-items` row's
+  `g-4` gutter utility sets a negative `margin-top` on `.row` (Bootstrap's row-gap mechanism), which was
+  never absorbed by anything above it. Added a hardcoded `padding-top` matching the gutter — not read from
+  the `--bs-gutter-y` custom property, since that inherits down from whichever ancestor `.row`/`.container`
+  last set it (the page layout grid), not from this component's own gutter.
+
 ### Removed
 
 - `ext_tables.sql` — no longer needed. The `tx_otcountup_item` table, including the polymorphic
