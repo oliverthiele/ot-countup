@@ -1,0 +1,14 @@
+{
+	"name": "ot-countup-build",
+	"private": true,
+	"description": "Minimal, standalone build for ot-countup's frontend assets. Not required to use the extension — only to change and re-minify the source TS/SCSS in Resources/Private/.",
+	"scripts": {
+		"build": "node build.mjs",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"esbuild": "^0.25.0",
+		"sass": "^1.83.0",
+		"typescript": "^5.7.0"
+	}
+}

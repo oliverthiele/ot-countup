@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="de">
+  <file id="ot-countup-locallang-db"
+        original="EXT:ot_countup/Resources/Private/Language/locallang_db.xlf">
+    <unit id="wizard.title">
+      <segment>
+        <source>CountUp</source>
+        <target>CountUp</target>
+      </segment>
+    </unit>
+    <unit id="wizard.description">
+      <segment>
+        <source>Content element for animated, viewport-triggered counting statistics (key figures).</source>
+        <target>Content-Element für animierte Kennzahlen, die beim Erscheinen im Viewport hochzählen.</target>
+      </segment>
+    </unit>
+    <unit id="countup_item.label">
+      <segment>
+        <source>Key figures</source>
+        <target>Kennzahlen</target>
+      </segment>
+    </unit>
+    <unit id="countup_item.description">
+      <segment>
+        <source>Each key figure counts up from a start to an end value once it becomes visible.</source>
+        <target>Jede Kennzahl zählt beim Sichtbarwerden von einem Start- zu einem Endwert hoch.</target>
+      </segment>
+    </unit>
+    <unit id="countup_duration">
+      <segment>
+        <source>Animation duration (ms)</source>
+        <target>Animationsdauer (ms)</target>
+      </segment>
+    </unit>
+    <unit id="countup_duration.description">
+      <segment>
+        <source>Duration of the counting animation in milliseconds, shared by all key figures of this element.</source>
+        <target>Dauer der Zähl-Animation in Millisekunden, gilt für alle Kennzahlen dieses Elements.</target>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.title">
+      <segment>
+        <source>Label</source>
+        <target>Bezeichnung</target>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_start">
+      <segment>
+        <source>Start value</source>
+        <target>Startwert</target>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_start.description">
+      <segment>
+        <source>The value the animation starts counting from. Usually 0.</source>
+        <target>Der Wert, ab dem die Animation zu zählen beginnt. In der Regel 0.</target>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_end">
+      <segment>
+        <source>End value</source>
+        <target>Endwert</target>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_prefix">
+      <segment>
+        <source>Prefix</source>
+        <target>Präfix</target>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_prefix.description">
+      <segment>
+        <source>Optional text before the number, e.g. "ca." or "+".</source>
+        <target>Optionaler Text vor der Zahl, z. B. "ca." oder "+".</target>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_suffix">
+      <segment>
+        <source>Suffix</source>
+        <target>Suffix</target>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_suffix.description">
+      <segment>
+        <source>Optional text after the number, e.g. "%" or "years".</source>
+        <target>Optionaler Text nach der Zahl, z. B. "%" oder "Jahre".</target>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.icon_identifier">
+      <segment>
+        <source>Icon</source>
+        <target>Icon</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

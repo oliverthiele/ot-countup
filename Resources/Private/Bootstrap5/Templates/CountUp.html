@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:oc="http://typo3.org/ns/OliverThiele/OtCountup/ViewHelpers"
+      lang="en" data-namespace-typo3-fluid="true">
+<head>
+    <meta charset="utf-8">
+    <title>Template: CountUp</title>
+</head>
+<body>
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+    <f:variable name="iconsLoaded" value="{oc:isExtensionLoaded(extensionKey: 'ot_icons')}"/>
+    <f:variable name="itemCount" value="{record.countup_items -> f:count()}"/>
+    <div class="ot-countup">
+        <div class="ot-countup-items row {oc:rowCols(count: itemCount)} g-4" role="list">
+            <f:for each="{record.countup_items}" as="item">
+                <div class="col" role="listitem">
+                    <f:if condition="{iconsLoaded} && {item.icon_identifier}">
+                        <f:then>
+                            <f:render partial="ItemWithIcon" arguments="{item: item, duration: record.countup_duration}"/>
+                        </f:then>
+                        <f:else>
+                            <f:render partial="Item" arguments="{item: item, duration: record.countup_duration}"/>
+                        </f:else>
+                    </f:if>
+                </div>
+            </f:for>
+        </div>
+    </div>
+
+    <f:asset.css identifier="ot-countup-css" href="EXT:ot_countup/Resources/Public/Css/CountUp.min.css"/>
+    <f:asset.script identifier="ot-countup-js" src="EXT:ot_countup/Resources/Public/JavaScript/CountUp.min.js"/>
+</f:section>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+name: oliverthiele/ot-countup
+dependencies:
+  - typo3/fluid-styled-content

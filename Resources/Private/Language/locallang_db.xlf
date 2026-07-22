@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+  <file id="ot-countup-locallang-db"
+        original="EXT:ot_countup/Resources/Private/Language/locallang_db.xlf">
+    <unit id="wizard.title">
+      <segment>
+        <source>CountUp</source>
+      </segment>
+    </unit>
+    <unit id="wizard.description">
+      <segment>
+        <source>Content element for animated, viewport-triggered counting statistics (key figures).</source>
+      </segment>
+    </unit>
+    <unit id="countup_item.label">
+      <segment>
+        <source>Key figures</source>
+      </segment>
+    </unit>
+    <unit id="countup_item.description">
+      <segment>
+        <source>Each key figure counts up from a start to an end value once it becomes visible.</source>
+      </segment>
+    </unit>
+    <unit id="countup_duration">
+      <segment>
+        <source>Animation duration (ms)</source>
+      </segment>
+    </unit>
+    <unit id="countup_duration.description">
+      <segment>
+        <source>Duration of the counting animation in milliseconds, shared by all key figures of this element.</source>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.title">
+      <segment>
+        <source>Label</source>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_start">
+      <segment>
+        <source>Start value</source>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_start.description">
+      <segment>
+        <source>The value the animation starts counting from. Usually 0.</source>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_end">
+      <segment>
+        <source>End value</source>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_prefix">
+      <segment>
+        <source>Prefix</source>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_prefix.description">
+      <segment>
+        <source>Optional text before the number, e.g. "ca." or "+".</source>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_suffix">
+      <segment>
+        <source>Suffix</source>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_suffix.description">
+      <segment>
+        <source>Optional text after the number, e.g. "%" or "years".</source>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.icon_identifier">
+      <segment>
+        <source>Icon</source>
+      </segment>
+    </unit>
+  </file>
+</xliff>
