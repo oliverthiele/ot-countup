@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-$ll = 'LLL:EXT:ot_countup/Resources/Private/Language/locallang_db.xlf:';
+$ll = 'ot_countup.db:';
 
 return [
     'ctrl' => [
@@ -35,20 +35,20 @@ return [
             value_start, value_end, --linebreak--,
             value_prefix, value_suffix, --linebreak--,
             icon_identifier,
-            --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime',
+            --div--;frontend.ttc:tabs.access, starttime, endtime',
         ],
     ],
     'columns' => [
         'sys_language_uid' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
+            'label' => 'core.general:LGL.language',
             'config' => [
                 'type' => 'language',
             ],
         ],
         'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
+            'label' => 'core.general:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -67,7 +67,7 @@ return [
         ],
         'hidden' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.visible',
+            'label' => 'core.general:LGL.visible',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',
@@ -81,7 +81,7 @@ return [
         ],
         'starttime' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+            'label' => 'core.general:LGL.starttime',
             'config' => [
                 'type' => 'datetime',
                 'default' => 0,
@@ -92,7 +92,7 @@ return [
         ],
         'endtime' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
+            'label' => 'core.general:LGL.endtime',
             'config' => [
                 'type' => 'datetime',
                 'default' => 0,
