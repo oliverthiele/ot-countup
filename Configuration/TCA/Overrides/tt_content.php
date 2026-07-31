@@ -7,7 +7,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 defined('TYPO3') or die();
 
 $extensionKey = 'ot_countup';
-$ll = 'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:';
+$ll = 'ot_countup.db:';
 
 ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
@@ -60,9 +60,9 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
 
 $GLOBALS['TCA']['tt_content']['types'][$extensionKey] = [
     'showitem' => '
-    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+    --div--;core.form.tabs:general,
         --palette--;;general,
         --palette--;;headers,
             countup_items, countup_duration,
-    --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes, rowDescription,',
+    --div--;core.form.tabs:notes, rowDescription,',
 ];
