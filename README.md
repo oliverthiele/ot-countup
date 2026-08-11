@@ -13,6 +13,8 @@ Adds a content element with animated, viewport-triggered counting statistics (ke
 - Any number of key figures per content element, managed via IRRE
 - Each key figure counts up from a start to an end value once it scrolls into view
 - Optional prefix/suffix per key figure (e.g. "ca.", "+", "%", "years")
+- Numbers are formatted for the page language by default; per key figure the thousands separator can be
+  switched off for values that are not amounts, e.g. years (1989 instead of 1,989)
 - Optional icon per key figure — works standalone, or with visual icon selection when
   [`ot-iconselector`](https://packagist.org/packages/oliverthiele/ot-iconselector) is installed, and with
   rendered SVG icons when [`ot-icons`](https://packagist.org/packages/oliverthiele/ot-icons) is installed
@@ -72,7 +74,9 @@ replace.
 1. Create a new **CountUp** content element in the TYPO3 backend.
 2. Add key figures via the IRRE interface. Each key figure has a label, start/end value, optional
    prefix/suffix, and an optional icon.
-3. Optionally set the animation duration (ms) for the whole element — it applies to every key figure.
+3. Enable **Output number without thousands separator** on a key figure whose value is not an amount —
+   a year is then rendered as `1989`, not as `1,989`.
+4. Optionally set the animation duration (ms) for the whole element — it applies to every key figure.
 
 ## Development
 

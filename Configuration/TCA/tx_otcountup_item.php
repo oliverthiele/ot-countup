@@ -33,6 +33,7 @@ return [
             'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden,
             title, --linebreak--,
             value_start, value_end, --linebreak--,
+            value_unformatted, --linebreak--,
             value_prefix, value_suffix, --linebreak--,
             icon_identifier,
             --div--;frontend.ttc:tabs.access, starttime, endtime',
@@ -130,6 +131,16 @@ return [
                 'type' => 'number',
                 'default' => 0,
                 'size' => 10,
+            ],
+        ],
+        'value_unformatted' => [
+            'exclude' => true,
+            'label' => $ll . 'tx_otcountup_item.value_unformatted',
+            'description' => $ll . 'tx_otcountup_item.value_unformatted.description',
+            'config' => [
+                'type' => 'check',
+                'renderType' => 'checkboxToggle',
+                'default' => 0,
             ],
         ],
         'value_prefix' => [
