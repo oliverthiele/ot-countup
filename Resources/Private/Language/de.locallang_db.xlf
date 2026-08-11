@@ -62,6 +62,18 @@
         <target>Endwert</target>
       </segment>
     </unit>
+    <unit id="tx_otcountup_item.value_unformatted">
+      <segment>
+        <source>Output number without thousands separator</source>
+        <target>Zahl ohne Tausendertrennzeichen ausgeben</target>
+      </segment>
+    </unit>
+    <unit id="tx_otcountup_item.value_unformatted.description">
+      <segment>
+        <source>Use this for values that are not amounts, e.g. years: 1989 instead of 1,989.</source>
+        <target>Für Werte, die keine Mengenangabe sind, z. B. Jahreszahlen: 1989 statt 1.989.</target>
+      </segment>
+    </unit>
     <unit id="tx_otcountup_item.value_prefix">
       <segment>
         <source>Prefix</source>

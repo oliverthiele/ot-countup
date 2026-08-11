@@ -21,13 +21,18 @@
     return t * (2 - t);
   }
 
-  function formatValue(value: number): string {
+  function formatValue(element: HTMLElement, value: number): string {
+    // Values such as years must stay unformatted (1989, not 1,989).
+    if (element.dataset.unformatted === '1') {
+      return String(value);
+    }
+
     const locale = document.documentElement.lang || 'de-DE';
     return new Intl.NumberFormat(locale).format(value);
   }
 
   function setValue(element: HTMLElement, value: number): void {
-    element.textContent = formatValue(value);
+    element.textContent = formatValue(element, value);
   }
 
   function animate(element: HTMLElement): void {
