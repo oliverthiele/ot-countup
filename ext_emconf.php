@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF[$_EXTKEY] = [
+$EM_CONF['ot_countup'] = [
     'title' => 'CE CountUp',
     'description' => 'TYPO3 content element for animated, viewport-triggered counting statistics (key figures).',
     'category' => 'fe',
